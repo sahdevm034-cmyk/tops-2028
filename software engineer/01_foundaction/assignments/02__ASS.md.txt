@@ -1,0 +1,29 @@
+                                                        Task Answers - How Software Works Session 2
+                                                        ============================================
+
+01. Three Main Layers of Software Architecture  :- 
+   
+UI ( Frontend ) :- The screen part that users see and click on. 
+Business Logic ( Backend):-  The brain part that processes all rules and work.
+Database :- The storage part that saves all user data safely.
+
+
+02. Client and Server :- 
+
+Client :- The mobile or laptop that asks for information. 
+server :- The big computer that gives back the requested information 
+Real-life Example :- When using  YouTube, your mobile phone is the client and YouTube's computer is the server. 
+
+
+03. Desktop Apps vs Web Apps vs Mobile Apps :-  
+
+Desktop Apps :-  1) Runs on personal computer or laptops. 2) Works without any internet connection. 
+Web Apps :- 1) Opens inside a web browser like chrome . 2) Needs an active internet connection to run. 
+Mobile Apps :- 1) Installed on smartphones from play store or app store. 2) uses mobile features like camera and GPS location.  
+
+
+04. Three popular Databases :- 
+
+MySQL:- Relational Database (SQL). 
+MongoDB :- Non-relational Database (NoSQL).
+PostgreSQL :- Relational Database (SQL).
