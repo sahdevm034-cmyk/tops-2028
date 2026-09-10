@@ -1,0 +1,65 @@
+                                                                 Task Answer - IT World Session 1
+                                                                 =================================
+  
+
+01. IT Job Roles :- 
+
+ Software Developer :- Writes code to build websites and software applications.
+ Software Tester (QA):- Tests software to find bugs and check quality.
+ UI/UX Designer :-   Designs user interfaces and visual layouts of websites.
+ Data Analyst :-  Analyzes business data to help companies make smart decisions. 
+ AI Engineer :-  Builds intelligent systems using machine learning models.
+
+
+02. Product VS Service Companies :- 
+
+ Product Companies :- 
+            
+Google:- Develops Google Search Engine and Android OS. 
+ Microsoft :- Builds Windows OS and Office tools. 
+Zoho :- provides cloud-based business software applications. 
+ 
+ Service Companies :-     
+
+TCS :- Provides custom software development services to global clients. 
+Infosys :- Offers cloud integration and IT consulting services.
+Wipro :- Manages IT infrastructure and software projects for businesses. 
+
+
+03. Full Forms  & Use  :-   
+                   
+
+GitHub ( Repository Hosting Service) :- Stores , shares  and tracks project code online. 
+Slack ( Searchable log of all conversation and knowledge):- used for team communication and instant messaging. 
+Jira ( Derived from 'Gojira' ):- used for tracking project tasks and bug management. 
+IDE ( Integrated Development Environment) :- Software application used by developers to  write and test code.
+API ( Application Programming interface) :- enables two different applications to share data and communicate. 
+
+
+
+04. Programming Languages & Uses :-
+
+Python :- Used in Artificial Intelligence, Machine Learning and Web Development.
+Java Script :-  Used  to add interactive features to websites. 
+C++ :-  used for building high-performance games and system software. 
+Java :- used for  developing enterprise applications and Android apps. 
+SQL :- used for managing and querying database data 
+
+
+05. Developer VS Tester :-
+ 
+
+A developer writes code to create software, websites and applications based on requirements. 
+
+A tester checks the developed software to find bugs and ensure it works correctly before launch. 
+
+
+
+
+
+
+
+
+
+
+
