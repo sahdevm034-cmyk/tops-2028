@@ -1,0 +1,59 @@
+                                           Task Answers -  Software Development Lifecycle Session 4
+                                           =========================================================
+
+
+01. Phases of SDLC :-
+
+Requirement:- Collecting all details about what the software should do.
+Design :- Planning the look and structure of the software. 
+Development:-Writing the code to build the software.
+Testing :- Checking for bugs to make sure the software works fine. 
+Deployment :- Releasing the software so users can use it.
+Maintenance :- Fixing bugs and updating the software after release.
+
+
+02. Agile & Waterfall models :- 
+
+Agile Model :- 
+     1). Work is done in small steps. 
+     2). Easy to change plans anytime.
+     3). Testing is done again and again during the project.
+
+Waterfall Model :-
+     1). Work moves step-by-step in one direction.
+     2). Very hard to change plans after starting.
+     3). Testing is done only at the end. 
+
+
+03. Main Scrum Roles:-
+
+Product Owner :- Tells the term what features to build for the client.
+Scrum Master :- Helps the team and removes any work problems.
+Development Team :- Builds and tests the software code.
+
+
+
+04. Sprint in Scrum :-
+
+Definition :- A short, fixed time period to complete a set of tasks.
+Duration :- Usually 1 to 4 weeks ( most commonly 2 weeks).
+
+
+
+05. Jira Board Columns :- 
+
+Backlog :- List of all tasks to do in the future.
+To Do :- Tasks that are ready to start now.
+In Progress:- Tasks that are currently being worked on.
+Done:- Tasks that are fully finished and tested.
+
+
+
+
+
+
+
+
+
+
+
