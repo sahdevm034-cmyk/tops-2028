@@ -1,0 +1,64 @@
+                                                      Task Answer - Git & version Control Session 5
+                                                      ==============================================
+
+
+Git Commands :-    
+
+Initialize a repo :- git init 
+Stage all files :- git add .
+Commit with a message :- git commit -m "your message"
+push to remote :- git push origin main
+pull latest changes :- git pull origin main 
+
+
+2. Difference Between Git Fetch and Git Pull :- 
+ 
+Git fetch :- Downloads  latest changes from the online repository but does not join them with your local code.
+Git pull :- Downloads latest changes and automatically merges them into your local code.
+
+
+3. GitHub Repository link :- 
+
+ Created a repository on GitHub and push a text file using:- 
+     
+       git init
+       git add .
+       git commit -m "add text file"
+       git remote add origin YOUR-REPOSITORY-URL 
+       git push -u origin main 
+   
+Repository link:- https://github.com/sahdevm034-cmyk/tops-2028/blob/master/software%20engineer/01_foundaction/assignments/01__ASS.md.txt 
+
+
+
+4. Difference Between Fork and pull Request :- 
+
+ Fork :- Creates a copy of another user's repository under your own GitHub account.
+ Pull Request :- Asks the original owner to review and merge your changes into their project.
+
+
+5. Commands to create and merge a branch :- 
+
+Create and switch to new branch :- git checkout -b feature-test
+Stage and commit changes :- git add .
+Commit the changes :- git commit -m " Added new feature"
+Switch back to main branch :- git checkout main
+merge branch into main :- git merge feature-test.
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+ 
