@@ -1,0 +1,60 @@
+                                                          Task answer session -2 :- 
+                                                          ==========================
+
+01. Check GCC installation :- 
+
+Open your command prompt (cmd) or terminal.
+type this command and press enter:-   gcc --version
+if it shows a version number ( like gcc (MinGW.org...) 6 .3.0), GCC is installed properly.
+
+
+
+02.The C program ("Hello Instagram world") :-
+
+          #include <stdio.h>
+
+           int  main(){
+              printf("Hello, Instagram World!\n");
+              return 0;
+
+             }
+
+     output :- Hello, Instagram world!
+
+
+03. c program :- 
+
+// Header:-  includes the standard input/output library for printf    #include <stdio.h>
+// Main function :- the entry point where program execution begins    int main () {
+                                                                       printf("Hello, Instagram World!\n");
+//Return statement :- ends the main function and sends status code 0 to the 0s   return 0;
+     
+ }
+
+ Header :- (#include <stdio.h>) gives access to the printf () function.
+ Main function :- (int main ()) is where the code starts running.
+ Return Statement :- (return 0;) signals that the program finished without errors.
+
+
+04. Comiler and run the program :-
+
+Compile the code :-     gcc hello.c -o hello 
+run the program :-     On Windows:- ( hello.exe) ,      On Mac/ Linux :- ( ./hello)
+output :-  Hello, Instagram World!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
