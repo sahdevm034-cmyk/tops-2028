@@ -1,0 +1,41 @@
+                                      Task answer - session - 1 :- 
+                                      ============================
+
+                                                                              
+
+01. Program Definition & example :-
+
+  A Program is a set of step-by-step instructions that tells a computer what to do.
+example:- In Paytm, when you scan a QR code and pay, a program checks your balance and transfers the money.
+
+
+02. Programming Languages Type :-
+
+C :- Compiled language. 
+Python :- Interpreted language .
+Java :- Both (Compiled and interpreted).
+
+
+03. Flowchart steps for BookMyShow :-
+
+[Start]
+[open Bookmyshow App]
+[select city and movie]
+[choose cinema and show time]
+[select seats]
+[make payment]
+[if payment success] :- Get ticket confirmation -- End
+[if payment failed] :- Retry payment or cancel -- End 
+
+
+04. Algorithm to order food on swiggy :- 
+
+
+open the swiggy application.
+search and pick a restaurant.
+select food items and add to cart.
+check your delivery address.
+select payment method ( UPI/Card).
+complete payment to place the order.
+
+      
