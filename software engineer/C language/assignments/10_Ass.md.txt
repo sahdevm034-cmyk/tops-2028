@@ -1,0 +1,110 @@
+                                                                   Task Answer Session 10 :- 
+                                                                   ========================
+
+01). String length of songTitle using strlen():-
+
+
+#include <stdio.h>
+#include <string.h>
+
+void main(){
+    char songTitle[] = "Tum Hi Ho";
+    int length = strlen(songTitle);
+
+    printf("song Title: %s\n",songTitle);
+    printf("Length of the string: %d\n",length);
+}
+
+02). Compare two usernames using strcmp() :-
+
+#include <stdio.h>
+#include <string.h>
+
+void main(){
+    char user1[50];
+    char user2[50];
+
+    printf("Enter first username: ");
+    scanf("%s",user1);
+
+    printf("Enter second username: ");
+    scanf("%s",user2);
+    if(strcmp(user1, user2) == 0){
+        printf("Result: Both username are the same.\n");
+    }
+    else{
+        printf("Result: the usernames are different.\n");
+    }
+    
+}
+
+
+03). Copy string 'Flipkart' using strcpy():-
+
+#include <stdio.h>
+#include <string.h>
+
+void main(){
+    char source[] = "Flipkart";
+    char shoppingApp[50];
+
+    strcpy(shoppingApp,source);
+
+    printf("source App: %s\n",source);
+    printf("Copied shopping App: %s\n",shoppingApp);
+}
+
+
+04). Generate username from first 5 characters :-
+
+     #include <stdio.h>
+#include <string.h>
+
+void main(){
+    char fullName[100];
+    char username[20];
+
+    printf("Enter your name: ");
+    scanf("%s",fullName);
+
+    if(strlen(fullName) <=5){
+        strcpy(username, fullName);
+    }
+    else{
+        strncpy(username, fullName, 5);
+        username[5] = '\0';
+    }
+    printf("Generated username: %s\n",username);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

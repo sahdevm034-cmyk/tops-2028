@@ -1,0 +1,89 @@
+                                                                       Task Answer Session-3:-
+                                                                       ========================
+
+01).Declare variables  for a flipkart  product:-
+
+
+
+
+#include <stdio.h>
+
+ void main(){
+    char productname[]="headphone";
+    float price = 999.50;
+    double rating = 4.6;
+
+    printf("product name : %s\n",productname);
+    printf("price: %.2f\n",price);
+    printf("rating: %.1f\n",rating);
+
+}
+
+
+02).Calculate final price of  Zomato order with GST:-
+
+
+
+#include <stdio.h>
+
+void main(){
+    float GST_RATE = 0.18;
+    float baseprice = 299.00;
+    float finalprice = baseprice+(baseprice*GST_RATE);
+
+    printf("base price: %.2f\n",baseprice);
+    printf("final price with GST: %.2f\n",finalprice);
+}
+
+
+
+03) Sportify playlist formatted sentence :- 
+
+
+
+
+#include <stdio.h>
+
+    void main (){
+        char playlistName[] ="old is gold";
+        int totalsongs = 100;
+        float avgduration = 3.5;
+
+
+   printf("my favorite playlist is %s with %d songs,having an average song duration of %.1f minutes.\n",playlistName,totalsongs,avgduration);
+         
+
+   
+}
+
+04).Identity and correct invalid variable names:-
+
+
+     Given name    |    Valid/Invalid                                           | Correct name  
+  ================================================================================================
+   |               |                                                            |
+| `1stPlayer`   |  Invalid — cannot start with a digit                       | `firstPlayer` 
+| `player_age`  |  Valid                                                     | `player_age`  
+| `$score`      |  Invalid in C — `$` is not a standard identifier character | `score`       
+| `total-marks` |  Invalid — `-` is treated as minus                         | `total_marks` 
+| `userName`    |  Valid                                                     | `userName`   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

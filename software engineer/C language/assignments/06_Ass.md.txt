@@ -1,0 +1,175 @@
+                                                                            Task answer session 6:-
+                                                                            =======================
+
+01). Countdown timer from 10 down to 1( for loop):-
+
+#include <stdio.h>
+
+void main(){
+    int a;
+    printf("Countdown begings:\n");
+    for (a=10;a>=1;a--){
+        printf("%d\n",a);
+    }
+}  
+
+
+02). Menu-driven console app for IPL teams (while loop):- 
+
+
+
+#include <stdio.h>
+#include <string.h>
+
+void main(){
+    char teams [10][20] = {"MI","RCB","RR"};
+    int teamcount = 3;
+    int choice = 0;
+     
+    while(choice !=3){
+        printf("---IPL MENU---\n");
+        printf("1.View favorite IPL teams\n");
+        printf("2. Add a new team \n");
+        printf("3. Exit\n");
+        printf("Enter your choice (1-3):-");
+        scanf("%d",&choice);
+
+        if(choice==1){
+            printf("IPL teams list:\n");
+            for(int a=0;a<teamcount;a++){
+                printf("%d. %s\n",a + 1, teams[a]);
+            }
+        }
+            else if (choice==2){
+                if(teamcount<10){
+                    printf("enter now team name:");
+                    scanf("%s",teams[teamcount]);
+                    teamcount++;
+                    printf("team added successfully!\n");
+                }
+                else{
+                    printf("team list is full!\n");
+                }
+            }
+                else if(choice==3){
+                    printf("exiting application.Goodbye!\n");
+                }
+                else{
+                    printf("invalid choice! please select 1,2 or 3.\n");
+                }
+            }
+        }
+    
+
+03). Guess the song game (do-while loop):-
+
+    
+#include <stdio.h>
+#include <string.h>
+
+void main(){
+    char secretsong[] = "99problems";
+    char guess[50];
+
+    printf("song options: [Iktara,99problems,Perfect]\n");
+    do{
+        printf("guess the song name:");
+        scanf("%s",guess);
+
+        if(strcmp(guess,secretsong) !=0){
+        printf("wrong guess! try again.\n");
+    
+    } 
+}
+    while(strcmp(guess,secretsong) !=0);
+    printf("Awesome! you guessed the right song: %s\n",secretsong);
+
+}
+
+
+
+04). Difference between Entry-Controlled and Exit-Controlled loops:-
+
+  
+ * Entry-controlled loop ( for, while):-
+ =====================================	                 
+                
+Definition: The condition is tested before the execution of the loop body.
+	
+Behavior: If the initial condition evaluates to false at the beginning, the loop body does not execute even once. 	
+ 
+Code Example:- 
+
+    #include <stdio.h>
+
+       void main(){
+       int i = 1;
+ 
+        while (i <= 5) {
+        printf("%d ", i);
+        i++;
+           }
+     }
+      
+ * Exit-controlled loop ( do- while):-
+ ====================================
+
+Definition: The loop body execute first, and the test condition is evaluated at the of each iteration.
+
+Behavior: Even if the initial condition is false at the start, the loop body executes at least once before terminating.
+
+Code Example:- 
+
+
+       #include <stdio.h>
+
+         void main() {
+         int i = 10;
+
+          do {
+          printf("%d ", i);
+          i++;
+         } while (i <= 5);
+
+         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

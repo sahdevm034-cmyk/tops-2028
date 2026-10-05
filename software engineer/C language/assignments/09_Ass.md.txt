@@ -1,0 +1,102 @@
+                                                                     Task Answer Session 9:-
+                                                                     =======================
+
+
+01). 1D array dailysteps for 7 days(loop traversal):-
+
+#include <stdio.h>
+
+void main(){
+    int dailySteps[7] = {4500,6200,5800,7100,8300,9500,6000};
+    int i;
+    printf("Daily step count for the week:\n");
+    for (i=0;i<7;i++){
+        printf("Day %d: %d steps\n",i + 1,dailySteps[i]);
+    }
+}
+
+02).  2D array playlistRatings (3 playlists X 5 days) and printf 2nd playlist :-
+
+
+#include <stdio.h>
+
+void main(){
+    //3 rows = playlists, 5 columns = days
+    float playlistRatings[3][5] ={
+        {4.2,4.5,4.3,4.6,4.8},
+        {3.8,4.0,4.1,4.2,4.5},
+        {4.9,4.8,5.0,4.9,4.7}
+    };
+    int j;
+    printf("Ratings for the second playlist across 5 days:\n");
+    for(j =0;j<5;j++){
+        printf("Day %d: %.1f\n",j +1,playlistRatings[1][j]);
+    }
+}
+
+
+
+03). Function to calculate average spend from 7-day Zomato orders :- 
+
+  
+   #include <stdio.h>
+
+float calculateAveragespend(int orders[],int size){
+    int sum = 0;
+    int i;
+
+    for(i=0;i<size;i++){
+        sum += orders[i];
+    }
+    return (float)sum/size;
+}
+void main(){
+    int zomatoOrders[7] = {250,320,180,450,600,350,290};
+    float avg = calculateAveragespend(zomatoOrders,7);
+
+    printf("total days: 7\n");
+    printf("Average daily zomato spend: Rs. %.2f\n",avg);
+}
+
+
+
+04). Find highest score from each IPL match in 2D array cricketscores:-
+
+#include <stdio.h>
+
+void main(){
+    //Each row = IPL match,Colums =[Team 1 runs,team 2 runs]
+
+    int cricketscores[3][2] ={
+        {185,190},
+        {210,175},
+        {165,168}
+    };
+    int i;
+    printf("Highest score from each IPL match:\n");
+    for (i=0;i<3;i++){
+        int highest = (cricketscores[i][0] > cricketscores[i][1] )? cricketscores[i][0]:cricketscores[i][1] ; 
+         printf("Match %d team 1= %d,team 2 = %d| Highest score = %d\n",i+1, cricketscores[i][0],cricketscores[i][1],highest);   
+    
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

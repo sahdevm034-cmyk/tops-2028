@@ -1,0 +1,121 @@
+                                                            Task answer session 5:-
+                                                            ========================
+
+
+01). IPL Fan Bot (if-else-if ladder):-
+
+
+#include <stdio.h>
+#include <string.h>
+
+void main(){
+    char team[10];
+    printf("enter your favorite IPL team (MI,RCB,RR):-");
+    scanf("%s",&team);
+
+    if (strcmp(team,"MI")==0){
+        printf("Duniya Hila Denge! Go Mumbai Indians!\n");
+    }
+    else if (strcmp(team,"RCB")==0){
+        printf("Ee Sala cup Namde! Royal Challengers Banglore!\n");
+    }
+    else if(strcmp(team,"RR")==0){
+        printf("Halla Bol! Rajsthan Royal!\n");
+    }
+    else{
+        printf("Invalide team selection!\n");
+    }
+}
+
+
+02). Zomato Food Suggestion (Switch-case statement):-
+
+
+#include <stdio.h>
+   
+   void main(){
+    int choice;
+    printf("select meal time:-\n");
+    printf("1.Breakfast\n 2.Lunch\n 3.Snacks\n 4.Dinner\n");
+    scanf("%d",&choice);
+
+    switch (choice){
+        case 1:
+        printf("Suggestion:Have some hot poha or Idli sambhar!\n");
+        break;
+        case 2:
+        printf("Suggestion: Try a dlicious Rajsthani thali!\n");
+        break;
+        case 3:
+        printf("Suggestion: Grab some Samosa and masala chai!\n");
+        break;
+        case 4: printf("Suggestion: Go for Dal Tadka with panner curry!\n");
+        break;
+        default:
+        printf("invalid choice\n");
+    }
+   }
+  
+
+
+03). Flipkart Discount Calculator(Nested if statements):-
+
+  #include <stdio.h>
+
+void main(){
+    float cartAmount,finalAmount;
+    printf("ENter total cart amount:");
+    scanf("%f",&cartAmount);
+
+    if(cartAmount>1000){
+        if(cartAmount>2000){
+            //20% discount for amount>2000
+            finalAmount = cartAmount-(cartAmount*0.20);
+            printf("20%% discount applied.\n");
+        }
+        else{
+            //10% discount for amount>1000 and <=2000
+            finalAmount = cartAmount-(cartAmount*0.10);
+            printf("10%% discount applied.\n");
+        }
+    } else{
+        //no discount
+        finalAmount = cartAmount;
+        printf("No discount applied.\n");
+    }
+    printf("final amount to pay: %.2f\n",finalAmount);
+
+}
+    
+
+04). Check Eligibility (Driving License, Credit Card, Car Rental):-
+
+    #include <stdio.h>
+
+void main(){
+    int age;
+    printf("enter your age:");
+    scanf("%d",&age);
+
+    if(age>=18){
+        printf("eligible for driving license.\n");
+    }
+    if(age>=21){
+        printf("eligible for credit card.\n");
+    }
+    if(age>=25){
+        printf("eligible for car rental.\n");
+    }
+    if(age<18){
+        printf("not eligible for any of these services.\n");
+    }
+}
+
+
+
+
+
+
+
+
+

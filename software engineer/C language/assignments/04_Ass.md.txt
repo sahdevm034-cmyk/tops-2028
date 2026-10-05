@@ -1,0 +1,149 @@
+                                                                    Task Answer Session -4:-
+                                                                    =========================
+ 
+01). calculate total bill amount:-
+
+     #include <stdio.h>
+
+float calculateTotal(float itemprice,int quantity){
+    return itemprice *quantity;
+}
+ void main(){
+    float price = 199.0;
+    int qty = 4;
+    float total =calculateTotal(price,qty);
+
+    printf("itemprice:- %.2f\n",price);
+    printf("quantity:- %d\n",qty);
+    printf("total bill:- %.2f\n",total);
+ }
+
+02). Filpkart-style discount calculator :-
+
+
+#include <stdio.h>
+
+void main(){
+    float productprice = 999.00;
+    float discountpercent = 10.0;
+    int ismember =1;
+ 
+    float discountamount = (productprice * discountpercent)/100;
+    float priceafterdiscount =productprice -discountamount;
+
+    if(ismember){
+        float extradiscount =(priceafterdiscount*5)/100;
+        priceafterdiscount =priceafterdiscount - extradiscount;
+    }
+    printf("initial price:-%.2f\n",productprice);
+    printf("final price after discount:-%.2f\n",priceafterdiscount);
+
+}
+
+
+03).Check eligibility for offer (Relational + logical):-
+
+
+#include <stdio.h>
+
+int isEligbleForOffer(int age,float ordervalue){
+    if (age>=18 && ordervalue>500){
+        return 1; //1 means true
+    } else{
+        return 0; //0 means false
+    }
+    }
+     void main(){
+        int age =20;
+        float ordervalue = 502.0;
+        
+        if (isEligbleForOffer(age,ordervalue)){
+            printf("offer status:- true\n");
+        }
+        else{
+            printf("offer status:- false\n");
+        }
+     }
+
+04).Instagram Trending Check :-
+
+
+
+#include <stdio.h>
+
+void main(){
+    int likes = 1200;
+    int comments = 250;
+    int shares = 60;
+
+    if((likes>=1000|| comments>200)&&(shares>=50)){
+        printf("post is trending or instagram\n");
+    }
+    else {
+        printf("post is not trending\n");
+    }
+}
+
+
+05).pre-increment vs post-increment:-
+
+
+#include <stdio.h>
+
+void main(){
+    int followercount = 199;
+    printf("initial followercount:- %d\n",followercount);
+    //post-increment:-(count++)
+    printf("during followercount:-%d\n",followercount++);
+    printf("after followercount:- %d\n",followercount);
+
+    //pre-increment:-(++count)
+    printf("during followercount:-%d\n",++followercount);
+    printf("after followercount:- %d\n",followercount);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
