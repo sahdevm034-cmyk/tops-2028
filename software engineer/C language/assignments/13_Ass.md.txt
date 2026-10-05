@@ -1,0 +1,99 @@
+                                                                  Task Answer Session 13:-
+                                                                  ========================
+ 
+01). Create playlist.txt and write top 3 favorite songs (write mode "w"):-
+
+#include <stdio.h>
+
+void main(){
+    FILE *file = fopen("playlist.txt","w");
+
+      if(file == NULL){
+        printf("Error opening file!\n");
+      }
+      fprintf(file,"Vaaroon\n");
+      fprintf(file,"Naina Da Kya Kasoor\n");
+      fprintf(file,"Such Keh Raha Hu\n");
+
+      fclose(file);
+      printf("playlist.txt created and 3 songs written successfully!\n");
+}
+
+
+02). Open playlist.txt in read mode ("r") and display each song on console:-
+
+
+#include <stdio.h>
+
+void main(){
+    FILE *file = fopen("playlist.txt","r");
+    char song[100];
+
+    if(file == NULL){
+        printf("Error opening file!\n");
+    }
+    printf("songs in playlist.txt:\n");
+    while(fgets(song,sizeof(song),file) != NULL){
+        printf("%s",song);
+    }
+    fclose(file);
+}
+
+
+03). Add two more songs to playlist.txt without deleting existing ones (append node "a"):-
+
+
+#include <stdio.h>
+
+void main(){
+    FILE *file = fopen("playlist.txt","a");
+
+    if(file == NULL){
+        printf("Error opening file!\n");
+    }
+    fprintf(file,"Perfect\n");
+    fprintf(file, "Beliver\n");
+
+    fclose(file);
+    printf("Two additional songs appended successfully!\n");
+}
+
+
+
+04). Read songs from playlist.txt and print only those containing  the word 'love' (case-insensitive):-
+
+
+
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+
+// Helper function to check if word contains 'love' in case-insenstive way
+int containsLove(const char *str){
+    char lowerstr[100];
+    int i;
+    for (i =0;str[i] !='\0'; i++){
+        lowerstr[i] = tolower(str[i]);
+    }
+    lowerstr[i] ='\0';
+
+    return strstr(lowerstr,"love") !=NULL;
+
+}
+void main(){
+    FILE *file = fopen("playlist.txt","r");
+    char song[100];
+
+    if (file == NULL){
+        printf("Erroe opening file!\n");
+ 
+    }
+    printf("songs containing the word 'love':\n");
+    while (fgets(song, sizeof(song),file) != NULL){
+        if (containsLove(song)){
+            printf("%s",song);
+        }
+    }
+    fclose(file);
+
+}

@@ -1,14 +1,11 @@
 #include <stdio.h>
 
-void main (){
-    printf ("hello user\n");
-    int i = 12;
-    float f = 12.5;
-    char c = 'a';
-    printf("1\n");
-    printf("i = %d\n", i);
-    printf("f = %f\n ",f);
-    printf("c =  %c\n",c);
-    
+void main(){
+     int a=43;
+     float b=56.4;
+     char c='A';
 
+     printf("a=%d\n",a);
+     printf("b=%f\n",b);
+     printf("c=%c\n",c);
 }

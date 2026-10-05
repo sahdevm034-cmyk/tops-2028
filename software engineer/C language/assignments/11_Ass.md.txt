@@ -1,0 +1,165 @@
+                                                              Task Answer Session 11:-           
+                                                              ========================
+
+01). Pointer declaration and address printing :-
+
+#include <stdio.h>
+
+void main(){
+    int likes = 250;
+    int *ptrLikes = &likes;
+
+    printf("valuse of likes: %d\n",*ptrLikes);
+    printf("Address stored in ptrLikes: %p\n",(void*)ptrLikes);
+}
+
+02). Swap song counts of two playlists using pointers:- 
+   
+    #include <stdio.h>
+
+ void swapPlaylistCounts(int *a,int *b){
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+ }
+ void main(){
+    int playlist1 = 45;
+    int playlist2 = 78;
+
+    printf("Before Swapping:\n");
+    printf("playlist1 songs: %d\n",playlist1);
+    printf("playlist2 songs: %d\n",playlist2);
+
+    swapPlaylistCounts(&playlist1, &playlist2);
+
+    printf("After Swapping:\n");
+    printf("playlist1 songs: %d\n",playlist1);
+    printf("playlist2 songs: %d\n",playlist2);
+ }
+
+
+03). Iterate array using pointer arithmetic and print values with address :-
+
+
+#include <stdio.h>
+
+void main(){
+    int orders[5] = {250,430,180,520,310};
+    int *ptr = orders;
+    int i;
+
+    printf("Zomato Orders with Memory Addresses:\n");
+    for (i=0; i<5;i++){
+        printf("order %d: Amount= Rs.%d| Address = %p\n",i +1, *(ptr +i),(void*)(ptr +i));
+        
+    }
+
+}
+
+04). Increment followers in array using pointer arithmetic :-
+
+
+#include <stdio.h>
+
+void incrementFollowers(int *followers,int n){
+    int i;
+    for (i=0;i<n; i++){
+        *(followers +i) = *(followers +i) +100;
+    }
+}
+void main(){
+    int followers[5] = {1200,3400,890,5000,2100};
+    int i;
+
+    printf("Original Follower Counts:\n");
+    for(i=0;i<5;i++){
+        printf("Friend %d: %d\n",i+1, followers[i]);
+    }
+    incrementFollowers(followers, 5);
+
+    printf("updated follower counts (+100):\n");
+    for (i =0; i<5; i++){
+        printf("friend %d: %d\n",i+1,followers[i]);
+    }
+}
+
+
+ 05). Memory Diagram Description :-
+
+
+
+Memory
+
+Address: 1000
++----------------+
+| likes = 10     |  ← Variable
++----------------+
+       ↑
+       |
+       | points to address 1000
+       |
++----------------+
+| ptrLikes       |  ← Pointer
+|   = 1000       |
++----------------+
+
+Variable: likes
+Address: 1000
+Pointer: ptrLikes
+
+
+Simple explanation:
+
+likes is a variable that stores the value 10.
+likes is stored at address 1000.
+ptrLikes is a pointer that stores the address of likes.
+So, ptrLikes points to likes.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

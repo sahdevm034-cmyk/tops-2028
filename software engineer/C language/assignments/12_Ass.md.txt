@@ -1,0 +1,143 @@
+                                                              Task Answer Session 12:-
+                                                             =========================
+
+01). Structure playlist for song details :-
+   
+     
+#include <stdio.h>
+#include <string.h>
+
+struct playlist {
+    char title[50];
+    char artist[50];
+    int duration; //(duration in seconds)
+};
+ void main(){
+    struct playlist mysong;
+
+    strcpy(mysong.title,"Woh Lamhe");
+    strcpy(mysong.artist,"Atif Aslam");
+    mysong.duration = 321;
+
+    printf("song title: %s\n",mysong.title);
+    printf("artist: %s\n", mysong.artist);
+    printf("duration: %d seconds\n",mysong.duration);
+ }
+
+
+02). Array of fooditem structures (Zomato menu item):-
+
+
+#include <stdio.h>
+
+struct FoodItem{
+    char itemname[50];
+    float price;
+    float rating
+};
+void main(){
+    struct FoodItem menu[3] = {
+        {"Paneer Butter Masala",280.0,4.5},
+        {"Butter Naan",45.0,4.6},
+        {"Veg Biryani",220.0,4.4}
+    };
+    int i;
+    printf("---Zomato Menu Items---\n");
+    for(i=0;i<3;i++){
+        printf("Item %d: %s | price: Rs. %.2f| Rating: %.1f/5\n",i +1,menu[i].itemname,menu[i].price,menu[i].rating);
+
+    }
+}
+
+
+
+
+03). Nested structure MovieShow for BookmyShow:-
+
+
+    #include <stdio.h>
+
+struct Time{
+    int hours;
+    int minutes;
+};
+struct MovieShow{
+    char movie[50];
+    int screen;
+    struct Time showTime
+};
+void main(){
+    struct MovieShow show1 = {"Inception",2,{18,30}};
+
+    printf("Movie: %s, screen: %d, Time: %02d:%02d\n",show1.movie,show1.screen,show1.showTime.hours,show1.showTime.minutes);
+}
+
+
+04). Structure Instaprofile with nested structure Bio:- 
+
+
+#include <stdio.h>
+
+struct Bio{
+    char description[100];
+    int age;
+};
+struct InstaProfile {
+    char username[50];
+    int followers;
+    struct Bio profileBio;
+};
+void main(){
+    struct InstaProfile myprofile = {
+        "sahdev_gehlot30",
+        128,
+        {"Mathematics Student|Idol: Hardik pandya",22 }
+    };
+    printf("---Instagram profile--\n");
+    printf("Username: %s\n", myprofile.username);
+    printf("Followers: %d\n",myprofile.followers);
+    printf("Bio: %s\n",myprofile.profileBio.description);
+    printf("Age: %d",myprofile.profileBio.age);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
