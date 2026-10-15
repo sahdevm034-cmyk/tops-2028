@@ -1,0 +1,118 @@
+                                                                   Task Answer Session 14:-
+                                                                   ========================
+
+01). Zomato order total price (Bug fix & C version):-
+
+
+#include <stdio.h>
+
+void main(){
+    //prices of item:- Burger (120),Pizza(250),frise(90)
+    int prices[] = {120,250,90};
+    int n = sizeof(prices)/sizeof(prices[0]);//total number of items
+    int total =0;
+
+    //loop through each item's price and accumulate
+    for (int i=0;i<n;i++){
+        total += prices[i]; //correct assignment: += (not =+)
+    }
+    printf("Total price is :-%d\n",total);
+}
+
+
+02). isEven function with inderntation & explanatory comments:-
+
+#include <stdio.h>
+#include <stdbool.h> // include to use stabdard 'bool','true',and'false'
+
+//function to check if a number is even or odd
+bool isEven(int num){
+    //if the reminder when divided by 2 is 0, the number is even
+    if(num %2==0){
+        return true;
+    }
+    else{
+        //otherwise,it is an odd number
+        return false;
+    }
+}
+void main(){
+    int testNum = 8;
+    if(isEven(testNum)){
+        printf("%d is Even\n",testNum);
+    }
+    else{
+        printf("%d is odd\n", testNum);
+    }
+}
+
+
+
+
+ 03). formatFollowersCount (Instagram style formatter) :- 
+
+  #include <stdio.h>
+
+//function that takes a count and writes a formatted string into 'result'
+ void formatFollowersCount(long count, char*result){
+    //case1:- 1 million (1,000,000) 0r more
+    if(count >= 1000000){
+        sprintf(result, "%.1fM",(double)count/100000.0);
+    }
+    // case 2:- 1 Thousand (1,000) to 999,999
+    else if ( count >= 1000){
+        sprintf(result,"%.1fK",(double)count / 1000.0);
+    }
+ //case 3:- Less than 1000, keep as-is 
+ else {
+    sprintf(result,"%d",count);
+ }
+ }
+ void main(){
+    char output[50];
+
+    formatFollowersCount(1200000,output);
+    printf("1200000 -> %s\n",output); // 1.2M
+
+    formatFollowersCount(1500,output);
+    printf("1500 -> %s\n",output);  //1.5K
+
+    formatFollowersCount( 450,output);
+    printf("450 -> %s\n", output);  //450
+
+    
+}
+
+    
+
+04). Print Even Number from 1 to 10:-
+
+#include <stdio.h>
+
+void main(){
+    // loop from 1 up to and includin 10
+
+    for (int i=1; i<=10;i++){
+        // condition : check if'i' is divisible by 2 with no remainder 
+        if ( i%2== 0){
+            printf("%d\n",i); // prints even numer (2,4,6,8,10)
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
